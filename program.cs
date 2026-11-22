@@ -120,12 +120,10 @@ Console.WriteLine($"Учебных недель осталось в семест
 Console.WriteLine("========================================");
 
 // Конвертер температур
-const double FahrenheitFactor = 9.0 / 5.0;
-const double FahrenheitOffset = 32.0;
 const double KelvinOffset = 273.15;
 
 double celsius = 23.5;
-double fahrenheit = celsius * FahrenheitFactor + FahrenheitOffset;
+double fahrenheit = celsius * 9.0 / 5.0 + 32;
 double kelvin = celsius + KelvinOffset;
 
 Console.WriteLine();
